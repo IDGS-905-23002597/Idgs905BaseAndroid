@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Idgs905BaseAndroid">
         <activity
+            android:name=".activity_Resultado"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_suma"
+            android:exported="false" />
+        <activity
+            android:name=".Ejemplo2.ResultActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity_ejemplo2"
             android:exported="false" />
         <activity

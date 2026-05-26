@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:layout_margin="16dp"
     android:orientation="vertical"
-    tools:context=".MenuActicity">
+    tools:context=".MainActivity">
 <Button
     android:id="@+id/btn1"
     android:layout_width="365dp"
