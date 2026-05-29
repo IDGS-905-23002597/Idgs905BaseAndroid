@@ -1,34 +1,44 @@
-package com.example.idgs905baseandroid
+package com.jaqueline.idgs905baseandroid
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.jaqueline.idgs905baseandroid.R
+import com.jaqueline.idgs905baseandroid.Distancia.distancia
 import com.jaqueline.idgs905baseandroid.Ejemplo1.ejemplo1
+import com.jaqueline.idgs905baseandroid.Ejemplo2.Ejemplo2Activity
+import com.jaqueline.idgs905baseandroid.ExamenResistencia.ExamenResistencia
+import com.jaqueline.idgs905baseandroid.Multiplica_AxB.Suma
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
         val btnEjemplo1 = findViewById<Button>(R.id.btn1)
+        val btnEjemplo2 = findViewById<Button>(R.id.btn2)
+        val btnDistancia = findViewById<Button>(R.id.btn3)
+        val btnSumaAB = findViewById<Button>(R.id.btn4)
+        val btnExamen =findViewById<Button>(R.id.btn5)
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        btnEjemplo1.setOnClickListener {
+            startActivity(Intent(this, ejemplo1::class.java))
         }
 
-        btnEjemplo1.setOnClickListener { navigateToEjemplo1() }
-    }
+        btnEjemplo2.setOnClickListener {
+            startActivity(Intent(this, Ejemplo2Activity::class.java))
+        }
 
-    private fun navigateToEjemplo1() {
-        val intent = Intent(this, ejemplo1::class.java)
-        startActivity(intent)
+        btnDistancia.setOnClickListener {
+            startActivity(Intent(this, distancia::class.java))
+        }
+
+        btnSumaAB.setOnClickListener {
+            startActivity(Intent(this, Suma::class.java))
+        }
+        btnExamen.setOnClickListener {
+            startActivity(Intent(this, ExamenResistencia::class.java))
+        }
     }
 }

@@ -12,19 +12,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Idgs905BaseAndroid">
         <activity
-            android:name=".activity_Resultado"
+            android:name=".ExamenResistencia.ExamenResistencia"
             android:exported="false" />
         <activity
-            android:name=".Activity_suma"
+            android:name=".Ejemplo1.ejemplo1"
+            android:exported="false" />
+        <activity
+            android:name=".Multiplica_AxB.Resultado"
+            android:exported="false" />
+        <activity
+            android:name=".Multiplica_AxB.Suma"
             android:exported="false" />
         <activity
             android:name=".Ejemplo2.ResultActivity"
             android:exported="false" />
         <activity
-            android:name=".activity_ejemplo2"
+            android:name=".Ejemplo2.Ejemplo2Activity"
             android:exported="false" />
         <activity
-            android:name=".activity_distancia"
+            android:name=".Distancia.distancia"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

@@ -1,21 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="16dp"
     android:orientation="vertical"
-    tools:context=".MainActivity">
-<Button
-    android:id="@+id/btn1"
-    android:layout_width="365dp"
-    android:layout_height="wrap_content"
-    android:text="Ejemplo1"
-    app:layout_constraintTop_toTopoOf="parent"
-    />
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ejemplo 1 - Suma" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ejemplo 2 - Nombre y Spinner"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Distancia entre dos puntos"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Suma A x B"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Examen Resistencia"
+        android:layout_marginTop="10dp" />
 
 </LinearLayout>
-
 
